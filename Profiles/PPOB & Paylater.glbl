@@ -46,7 +46,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'3812308006'</initValue>
+      <initValue>'3812310001'</initValue>
       <name>Rek_Simpanan_Khusus</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'31000'</initValue>
+      <name>NominalTagihan</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'bayar sepatu'</initValue>
+      <name>KeteranganBayar</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

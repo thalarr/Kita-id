@@ -17,7 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.kita.id')
+WebUI.callTestCase(findTestCase('Prepare'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Paylater (kita)/MenuPinjaman'), 0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/PLN/MenuListrik'), 0)
+
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/PLN/PilihRekening'), 0)
+
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/PLN/Paylater'), 0)
+
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/PLN/NopelPLN'), 0)
+
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/PLN/NoTujuan'), 0)
+
+Mobile.setText(findTestObject('Paylater (kita)/PPOB/PLN/NoTujuan'), GlobalVariable.PLN_Prabayar, 0)
+
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/PLN/android.widget.Button - LANJUT2'), 0)
+
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/PLN/android.widget.Button - LANJUT2'), 0)
+
+Mobile.closeApplication()
 

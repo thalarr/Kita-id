@@ -21,36 +21,29 @@ import io.appium.java_client.android.nativekey.AndroidKey as AndroidKey
 import io.appium.java_client.android.nativekey.KeyEvent as KeyEvent
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 
-Mobile.startExistingApplication('com.cardlez.id')
+WebUI.callTestCase(findTestCase('Prepare'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/MenuPaketData'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.TextView - Antar Rekening Cardlez'), 
-    0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/PilihRekening'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.EditText'), 0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/Paylater'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.EditText (1)'), 0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/NoTelepon'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.EditText (2)'), GlobalVariable.Rek_Simpanan_Khusus, 
-    0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/NoTujuan'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.Button - LANJUT'), 0)
+Mobile.setText(findTestObject('Paylater (kita)/PPOB/Paket Data/NoTujuan'), GlobalVariable.No_Hp, 0)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.EditText (3)'), 0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/android.widget.Button - LANJUT'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.EditText (4)'), GlobalVariable.NominalTagihan , 
-    0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/JenisPaket'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.EditText (5)'), 0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/android.widget.CheckedTextView - Gigamax Fit'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.EditText (6)'), GlobalVariable.KeteranganBayar, 
-    0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/android.widget.Button - LANJUT2'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.Button - LANJUT (1)'), 
-    0)
-
-Mobile.tap(findTestObject('Object Repository/Paylater/Transfer sukarela ke khusus/android.widget.TextView - LANJUT'), 0)
+Mobile.tap(findTestObject('Paylater (kita)/PPOB/Paket Data/android.widget.TextView - LANJUT3'), 0)
 
 AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
@@ -65,4 +58,6 @@ driver.pressKey(new KeyEvent(AndroidKey.DIGIT_1))
 driver.pressKey(new KeyEvent(AndroidKey.DIGIT_2))
 
 driver.pressKey(new KeyEvent(AndroidKey.DIGIT_3))
+
+Mobile.closeApplication()
 

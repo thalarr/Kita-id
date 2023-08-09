@@ -33,10 +33,10 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Web/Accounting/Repor
 WebUI.click(findTestObject('Object Repository/Web/Accounting/Report/Page_- Invelli Microfinance System/button_Search'))
 
 WebUI.setText(findTestObject('Object Repository/Web/Accounting/Report/Page_- Invelli Microfinance System/input_Tanggal Awal_datestart'), 
-    '04/08/2023')
+    '01/10/2023')
 
 WebUI.setText(findTestObject('Object Repository/Web/Accounting/Report/Page_- Invelli Microfinance System/input_Tanggal Akhir_datefinish'), 
-    '04/08/2023')
+    '01/10/2023')
 
 WebUI.click(findTestObject('Object Repository/Web/Accounting/Report/Page_- Invelli Microfinance System/div_Tanggal Awal                           _671cc8'))
 
